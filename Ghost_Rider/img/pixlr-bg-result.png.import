@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/2093-modified.png-6e79f3aea2ad05f7a58fdbfa6ae8b24f.stex"
+path="res://.import/pixlr-bg-result.png-01e860bdd918c93f5dd1b5f8a6167cbf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://2093-modified.png"
-dest_files=[ "res://.import/2093-modified.png-6e79f3aea2ad05f7a58fdbfa6ae8b24f.stex" ]
+source_file="res://img/pixlr-bg-result.png"
+dest_files=[ "res://.import/pixlr-bg-result.png-01e860bdd918c93f5dd1b5f8a6167cbf.stex" ]
 
 [params]
 

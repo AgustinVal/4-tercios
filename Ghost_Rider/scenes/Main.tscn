@@ -1,18 +1,23 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://icon.png" type="Texture" id=1]
-[ext_resource path="res://2093-modified.png" type="Texture" id=2]
+[ext_resource path="res://img/icon.png" type="Texture" id=1]
+[ext_resource path="res://img/2093-modified.png" type="Texture" id=2]
+[ext_resource path="res://scenes/Ghost_Intro.tscn" type="PackedScene" id=3]
+
+[sub_resource type="PhysicsMaterial" id=3]
+bounce = 1.0
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 400, 25 )
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 31.1448
+radius = 40.0
 
 [node name="Main" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2( 503, 471 )
+physics_material_override = SubResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -31,7 +36,7 @@ visible = false
 position = Vector2( 512, 300 )
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
-position = Vector2( 719, 262 )
+position = Vector2( 875, 79 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -40,6 +45,9 @@ __meta__ = {
 shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="RigidBody2D"]
-position = Vector2( 1.00001, 7.62939e-06 )
-scale = Vector2( 0.109781, 0.106748 )
+position = Vector2( -1.4782e-05, 2.86102e-06 )
+scale = Vector2( 0.138648, 0.138648 )
 texture = ExtResource( 2 )
+
+[node name="Ghost_Intro" parent="." instance=ExtResource( 3 )]
+position = Vector2( 695, 303 )
